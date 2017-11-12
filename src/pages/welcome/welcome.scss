@@ -1,0 +1,15 @@
+page-welcome {
+    .swiper-pagination-bullet-active{
+        background: white;
+    }
+    .bg-image{
+        background-image: url('..assets/imgs/img.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .padding {
+        padding-bottom: 100px;
+    }
+
+}
