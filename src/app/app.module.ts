@@ -8,11 +8,26 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { Login } from '../pages/login/login';
-
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { FirebaseProvider } from './../providers/firebase/firebase';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+
+
+//authentication from firebase
+const firebaseAuth = {
+  apiKey: "AIzaSyAdcVfQahkRbWsAi3ZU3xAmxu7XwJ0g8TE",
+  authDomain: "health-app-851f5.firebaseapp.com",
+  databaseURL: "https://health-app-851f5.firebaseio.com",
+  projectId: "health-app-851f5",
+  storageBucket: "",
+  messagingSenderId: "777451631130"
+};
 
 @NgModule({
   declarations: [
@@ -22,11 +37,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     WelcomePage,
-    Login
+    LoginPage,
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseAuth),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,12 +54,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     TabsPage,
     WelcomePage,
-    Login
+    LoginPage,
+  
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    
   ]
 })
 export class AppModule {}
