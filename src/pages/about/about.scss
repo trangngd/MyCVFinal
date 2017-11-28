@@ -1,3 +1,22 @@
 page-about {
+    .myButton {
+        margin-top: 15vh;
+        width: 84%;
+       }
+       .bg-image {
+        background-image: url('../assets/imgs/anh.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        }
+        .no-scroll .scroll-content {
+            overflow: hidden;
+            }
+        .label {
+            margin-top: 3vh;
+        }
+        .title {
+            text-align: center;
+        }
 
 }

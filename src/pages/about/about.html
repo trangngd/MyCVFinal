@@ -1,11 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+     Your BMI
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="bg-image no-scroll" padding>
+    <h2 class="title">Find out your BMI</h2>
+    <ion-item class="label">
+        <ion-label color="myWhite" style="font-size: 12px" stacked>Your Height (centimeters)</ion-label>
+        <ion-input type="number" placeholder="Enter Your Height "></ion-input>
+      </ion-item>
+      <ion-item class="label">
+          <ion-label color="myWhite" style="font-size: 12px" stacked>Your Weight (kilograms)</ion-label>
+          <ion-input type="number" placeholder="Enter Your Weight"></ion-input>
+        </ion-item>
+        <div text-center>
+        <button class="myButton" ion-button color="myWhite" round outline >Calculate</button>
+         </div>
 
 </ion-content>
