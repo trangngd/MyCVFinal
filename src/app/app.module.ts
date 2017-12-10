@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { SkillPage } from '../pages/skill/skill';
+import { InfoPage } from '../pages/info/info';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,12 +23,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 //authentication from firebase
 const firebaseAuth = {
-  apiKey: "AIzaSyAdcVfQahkRbWsAi3ZU3xAmxu7XwJ0g8TE",
-  authDomain: "health-app-851f5.firebaseapp.com",
-  databaseURL: "https://health-app-851f5.firebaseio.com",
-  projectId: "health-app-851f5",
-  storageBucket: "",
-  messagingSenderId: "777451631130"
+  apiKey: "AIzaSyBqfzmWzaoxsMuaR5M27VtmhX1sFRwI1CI",
+  authDomain: "my-cv-final.firebaseapp.com",
+  databaseURL: "https://my-cv-final.firebaseio.com",
+  projectId: "my-cv-final",
+  storageBucket: "my-cv-final.appspot.com",
+  messagingSenderId: "926030078726"
 };
 
 @NgModule({
@@ -38,6 +40,8 @@ const firebaseAuth = {
     TabsPage,
     WelcomePage,
     LoginPage,
+    SkillPage,
+    InfoPage
     
   ],
   imports: [
@@ -55,6 +59,8 @@ const firebaseAuth = {
     TabsPage,
     WelcomePage,
     LoginPage,
+    SkillPage,
+    InfoPage
   
   ],
   providers: [

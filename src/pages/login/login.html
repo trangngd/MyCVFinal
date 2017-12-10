@@ -6,24 +6,24 @@
 
 
 <ion-content class="bg-image no-scroll" padding>
-  <img src="assets/imgs/heart.png" class="logo">
+  <img src="assets/imgs/hello.jpg" class="logo">
   <div> 
     <ion-list class="list" inset> 
       <ion-item class="label">
-        <ion-label color="myWhite" style="font-size: 12px" stacked>Username</ion-label>
+        <ion-label color="myWhite" style="font-size: 16px" stacked>Username</ion-label>
         <ion-input type="text" #username placeholder="Enter Username"></ion-input>
       </ion-item>
       <ion-item class="label">
-          <ion-label color="myWhite" style="font-size: 12px" stacked>Password</ion-label>
+          <ion-label color="myWhite" style="font-size: 16px" stacked>Password</ion-label>
           <ion-input type="password" #password placeholder="Enter Password"></ion-input>
         </ion-item>
     </ion-list>
   </div>
-  <p class="text" style="font-family: opensans; font-size: 14px; color:#ebebeb"><span>Forgot your password?</span></p>
+  <p class="text" style="font-family: opensans; font-size: 14px; color:#0f0909"><span>Forgot your password?</span></p>
   <div text-center>
     <!--calling for Login function from button-->
-<button class="myButton" ion-button color="myWhite" round outline (click)="signInUser()">Login</button>
+<button class="myButton" ion-button color="light" round outline (click)="signInUser()">Login </button>
 <!--calling for the Register function from button-->
-<button class="myButton" ion-button color="light" color="myWhite" round outline (click)="registerUser()">Register</button>
+<button  class="myButton" ion-button color="light" round outline (click)="registerUser()">Register</button>
     </div>
 </ion-content>

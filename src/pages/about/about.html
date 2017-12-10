@@ -1,23 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-     Your BMI
+     Education and Work Experiences
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="bg-image no-scroll" padding>
-    <h2 class="title">Find out your BMI</h2>
-    <ion-item class="label">
-        <ion-label color="myWhite" style="font-size: 12px" stacked>Your Height (centimeters)</ion-label>
-        <ion-input type="number" placeholder="Enter Your Height "></ion-input>
-      </ion-item>
-      <ion-item class="label">
-          <ion-label color="myWhite" style="font-size: 12px" stacked>Your Weight (kilograms)</ion-label>
-          <ion-input type="number" placeholder="Enter Your Weight"></ion-input>
-        </ion-item>
-        <div text-center>
-        <button class="myButton" ion-button color="myWhite" round outline >Calculate</button>
-         </div>
-
+<ion-content class="bg-image">
+    <ion-card>  
+    <ion-card-header style="font-family: opensans; font-size: 25px">
+          Education
+        </ion-card-header>
+      
+        <ion-item>
+            <ion-icon name="school" item-start></ion-icon>
+            Laurea University of Applied Sciences
+            <p>Espoo</p>
+          </ion-item>
+          <ion-item>
+              <ion-icon name="school" item-start></ion-icon>
+             Hanoi Law University
+              <p>Hanoi</p>
+          </ion-item>
+      </ion-card>
+      <ion-card>  
+          <ion-card-header style="font-family: opensans; font-size: 25px">
+              Work Experiences
+            </ion-card-header>
+          
+            <ion-item>
+                <ion-icon name="chatbubbles" item-start></ion-icon>
+                Market Research Intern
+                <p>Vinaphone Vietnam</p>
+              </ion-item>
+              <ion-item>
+                  <ion-icon name="git-network" item-start></ion-icon>
+                 Digital Marketing Intern
+                  <p>JobGO</p>
+              </ion-item>
+            </ion-card>
 </ion-content>
